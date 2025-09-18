@@ -7,13 +7,13 @@ export default function HeroSection() {
   return (
     <section className="w-screen overflow-hidden">
       {/* Background Slider Only */}
-      <div className="w-full h-[75vh] relative">
+      <div className="w-full h-[65vh] relative">
         <BackgroundSlider />
       </div>
 
 
       {/* Content After Slider */}
-      <div className="relative z-20 flex flex-col items-center justify-center px-6 py-10 text-center text-white bg-white">
+      <div className="relative z-20 flex flex-col items-center justify-center px-5     py-5 text-center text-white bg-white">
         {/* Center Title */}
         <h1 className="text-3xl md:text-6xl font-bold pt-5 text-secondary drop-shadow-lg mb-7">
           Khadija Tul Zahra Physio Therapy Center
@@ -106,9 +106,13 @@ export default function HeroSection() {
               href="https://wa.me/923291500326?text=Hello%20I%20want%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-green-500 hover:text-green-600 transition"
+              className="flex items-center gap-2 hover:text-green-600 transition"
             >
-              <FaWhatsapp size={34} />
+              {/* Icon with green circle */}
+              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-green-500">
+                <FaWhatsapp size={22} className="text-white" />
+              </div>
+
               <span className="text-white font-bold">
                 Contact:{" "}
                 <span className="font-semibold text-yellow-300">
@@ -116,6 +120,9 @@ export default function HeroSection() {
                 </span>
               </span>
             </a>
+
+
+
           </p>
 
 

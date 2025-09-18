@@ -24,8 +24,8 @@ const Navbar = () => {
           <Image
             src="/logo.png"
             alt="KTZ Physio Logo"
-            width={50}
-            height={50}
+            width={65}
+            height={90}
           />
           <h1 className="text-xl font-semibold text-secondary">PHYSIO</h1>
         </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="https://wa.me/923245549172?text=Hello%20I%20want%20to%20book%20an%20appointment"
+              href="https://wa.me/923291500326?text=Hello%20I%20want%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-white rounded-md bg-secondary
