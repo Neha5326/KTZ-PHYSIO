@@ -11,9 +11,8 @@ export default function HeroSection() {
         <BackgroundSlider />
       </div>
 
-
       {/* Content After Slider */}
-      <div className="relative z-20 flex flex-col items-center justify-center px-5     py-5 text-center text-white bg-white">
+      <div className="relative z-20 flex flex-col items-center justify-center px-5 py-5 text-center text-white bg-white">
         {/* Center Title */}
         <h1 className="text-3xl md:text-6xl font-bold pt-5 text-secondary drop-shadow-lg mb-7">
           Khadija Tul Zahra Physio Therapy Center
@@ -25,9 +24,9 @@ export default function HeroSection() {
           <span className="font-semibold text-yellow-300">
             the best physiotherapy Center
           </span>{" "}
-          where expert care meets compassion.
-          Our goal is to help you live a healthy, pain-free life with modern
-          physiotherapy and rehabilitation techniques.
+          where expert care meets compassion. Our goal is to help you live a
+          healthy, pain-free life with modern physiotherapy and rehabilitation
+          techniques.
         </p>
 
         {/* Doctors Info */}
@@ -49,8 +48,8 @@ export default function HeroSection() {
                 Dr. Adeela (DPT),(MPPTA)
               </h3>
               <p className="text-xl md:text-xl text-secondary text-center">
-                Expert in musculoskeletal & rehabilitation therapy.
-                Passionate about patient-centered healing.
+                Expert in musculoskeletal & rehabilitation therapy. Passionate
+                about patient-centered healing.
               </p>
             </div>
 
@@ -91,7 +90,7 @@ export default function HeroSection() {
         </p>
 
         <div className="space-y-3">
-          <p className="text-2xl font-bold text-white">
+          <div className="text-2xl font-bold text-white">
             Timings:{" "}
             <span className="font-semibold text-yellow-300">
               Mon – Thu & Sat – Sun, 9:00am – 5:00pm
@@ -99,9 +98,10 @@ export default function HeroSection() {
             <span className="font-semibold text-yellow-300 block">
               Friday: Closed
             </span>
-          </p>
+          </div>
 
-          <p className="flex justify-center items-center gap-3 text-2xl font-bold text-white">
+          {/* ✅ Fixed: div instead of p */}
+          <div className="flex justify-center items-center gap-3 text-2xl font-bold text-white">
             <a
               href="https://wa.me/923291500326?text=Hello%20I%20want%20to%20book%20an%20appointment"
               target="_blank"
@@ -120,12 +120,7 @@ export default function HeroSection() {
                 </span>
               </span>
             </a>
-
-
-
-          </p>
-
-
+          </div>
         </div>
       </div>
     </section>

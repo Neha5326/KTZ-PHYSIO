@@ -22,12 +22,11 @@ const Navbar = () => {
         {/* Logo + Text ek sath */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logo.png"
+            src="/logo1.png"
             alt="KTZ Physio Logo"
-            width={65}
-            height={90}
-          />
-          <h1 className="text-xl font-semibold text-secondary">PHYSIO</h1>
+            width={190}
+            height={210}
+          />      
         </Link>
 
         {/* Desktop Nav Links */}
