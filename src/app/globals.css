@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+/* @import "tailwindcss/preflight";
+@import "tailwindcss/utilities"; */
+
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: rgb(24, 22, 22);
+}
+
+@theme inline {
+   --color-primary: rgb(46, 43, 104); 
+   --color-secondary: rgb(29, 155, 151); 
+   --color-ternary: rgb(176,38,133);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background:#ffffff; 
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+    .slick-slider,
+        .slick-list,
+        .slick-track,
+        .slick-slide > div {
+          height: 100% !important;
+        }
+        .slick-slide img {
+          display: block;
+        }
+        body {
+          overflow-x: hidden !important; /* stops overflow */
+        }
