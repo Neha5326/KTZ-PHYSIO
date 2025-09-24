@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -63,13 +64,30 @@ const page = () => {
           </div>
         </div>
 
-        {/* Bottom Small Line */}
-        <div className="mt-6  text-center text-lg opacity-75">
-          Made with ❤️ for better health
-        </div>
+ {/* Bottom Small Line */}
+<div className="mt-6 text-center text-lg md:text-xl font-serif tracking-wide text-primary  flex items-center justify-center gap-3">
+  <span className="italic">Developed By</span>
+  <Image
+    src="/jsk-logo.png"
+    alt="JSK Logo"
+    width={70}
+    height={70}
+    className="inline-block w-12 md:w-20 h-auto"
+  />
+  <a
+    href="https://wa.me/923286649574"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-primary font-bold hover:underline"
+  >
+    (+92-328-6649574)
+  </a>
+</div>
+
+
       </footer>
 
-      {/* Floating WhatsApp Icon */}
+     
       {/* Floating WhatsApp Icon */}
       <a
         href="https://wa.me/923291500326?text=Hello%20I%20want%20to%20book%20an%20appointment"
