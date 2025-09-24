@@ -38,21 +38,28 @@ export default function BackgroundSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    arrows: false, // disable default arrows
+    arrows: false,
   };
 
   const slides = ["/img5.jpg", "/Cerebral-Palsy.jpg", "/physio.png"];
 
   return (
     <div className="relative w-full h-full">
-      <Slider ref={(slider) => (sliderRef = slider)} {...settings} className="h-full relative">
+      <Slider
+        ref={(slider) => (sliderRef = slider)}
+        {...settings}
+        className="h-full relative"
+      >
         {slides.map((src, i) => (
-          <div key={i} className="relative w-full h-screen">
+          <div
+            key={i}
+            className="relative w-full h-[60vh] md:h-screen" // mobile height chhoti
+          >
             <Image
               src={src}
               alt={`Slide ${i + 1}`}
               fill
-              className="object-cover"
+              className="object-cover object-center" // responsive crop
               priority
             />
           </div>
