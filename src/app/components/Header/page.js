@@ -90,7 +90,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="https://wa.me/923245549172?text=Hello%20I%20want%20to%20book%20an%20appointment"
+                href="https://wa.me/923291500326?text=Hello%20I%20want%20to%20book%20an%20appointment"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
