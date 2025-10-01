@@ -41,7 +41,7 @@ export default function BackgroundSlider() {
     arrows: false,
   };
 
-  const slides = ["/img5.jpg", "/Cerebral-Palsy.jpg", "/physio.png"];
+  const slides = ["/img6.jpg", "/Cerebral-Palsy.jpg", "/physio.png"];
 
   return (
     <div className="relative w-full h-full">

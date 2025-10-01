@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 export const metadata = {
-  title: "PHYSIOTHERAPY CENTER",
+  title: "KTZ PHYSIOTHERAPY CENTER",
   description: "Physiotherapy & Rehab Center",
   icons: {
     icon: "/logo.png",
   },
   openGraph: {
-    title: "PHYSIOTHERAPY CENTER",
+    title: "KTZ PHYSIOTHERAPY CENTER",
     description: "Physiotherapy & Rehab Center",
     url: "https://ktz-physio.vercel.app/", 
     siteName: "Khadija Tul Zahra Physio Therapy Center",

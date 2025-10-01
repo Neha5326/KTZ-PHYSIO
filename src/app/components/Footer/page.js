@@ -64,39 +64,42 @@ const page = () => {
           </div>
         </div>
 
- {/* Bottom Small Line */}
-<div className="mt-6 text-center text-lg md:text-xl font-serif tracking-wide text-primary  flex items-center justify-center gap-3">
-  <span className="italic">Developed By</span>
-  <Image
-    src="/jsk-logo.png"
-    alt="JSK Logo"
-    width={70}
-    height={70}
-    className="inline-block w-12 md:w-20 h-auto"
-  />
-  <a
-    href="https://wa.me/923286649574"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-primary font-bold hover:underline"
-  >
-    (+92-328-6649574)
-  </a>
-</div>
+        {/* Bottom Small Line */}
+        <div className="mt-6 text-center text-lg md:text-xl text-primary  flex items-center justify-center gap-3">
+          <span className="italic">Developed By</span>
+          <Image
+            src="/jsk-logo.png"
+            alt="JSK Logo"
+            width={70}
+            height={70}
+            className="inline-block w-12 md:w-20 h-auto"
+          />
+          <a
+            href="https://api.whatsapp.com/send?phone=923286649574&text=hello%20i%20want%20to%20get%20more%20information%20about%20your%20work"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-primary font-bold "
+          >
+            <FaWhatsapp size={25} className="text-green-500" />
+            <span>+92 328-6649574</span>
+          </a>
+
+        </div>
 
 
       </footer>
 
-     
+
       {/* Floating WhatsApp Icon */}
       <a
-        href="https://wa.me/923291500326?text=Hello%20I%20want%20to%20book%20an%20appointment"
+        href="https://api.whatsapp.com/send?phone=923291500326&text=hello%20i%20want%20to%20book%20an%20appointment"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-50 p-4 text-white transition bg-green-500 rounded-full shadow-lg bottom-6 right-4 hover:bg-green-600"
       >
         <FaWhatsapp size={38} />
       </a>
+
 
     </div>
   );
